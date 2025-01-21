@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/disdrodb-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/disdrodb-{{ version }}.tar.gz
   sha256: 107251c3430409eda12f922c878a686257572f85772ee481ea7c7a23b615e4c9
 
 build:
@@ -27,16 +27,16 @@ build:
     - disdrodb_run_l0 = disdrodb.l0.scripts.disdrodb_run_l0:disdrodb_run_l0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools >=61.0
     - setuptools-scm
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - click
     - tqdm
     - pooch
@@ -73,6 +73,7 @@ test:
     - disdrodb_run_l0 --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ltelab/disdrodb
