@@ -1,5 +1,5 @@
 {% set name = "disdrodb" %}
-{% set version = "0.0.21" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/disdrodb-{{ version }}.tar.gz
-  sha256: 107251c3430409eda12f922c878a686257572f85772ee481ea7c7a23b615e4c9
+  sha256: 5320ce254c7b91096fe9bf75cbf3aa64dfb30eeb11463c327d677294d88f8d82
 
 build:
   entry_points:
@@ -27,7 +27,7 @@ build:
     - disdrodb_run_l0 = disdrodb.l0.scripts.disdrodb_run_l0:disdrodb_run_l0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
