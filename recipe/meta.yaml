@@ -44,12 +44,12 @@ requirements:
     - requests
     - pyyaml
     - trollsift
-    - h5py
     - netcdf4
     - pyarrow
     - pandas
     - dask-core
     - xarray
+    - scipy
     - setuptools
 
 test:
