@@ -73,7 +73,16 @@ test:
   commands:
     - pip check
     - disdrodb_initialize_station --help
+    - disdrodb_data_archive_directory --help
+    - disdrodb_metadata_archive_directory --help
+    - disdrodb_download_metadata_archive --help
     - disdrodb_check_metadata_archive --help
+    - disdrodb_open_metadata_archive --help
+    - disdrodb_open_data_archive --help
+    - disdrodb_open_logs_directory --help
+    - disdrodb_open_metadata_directory --help
+    - disdrodb_open_product_directory --help
+    - disdrodb_open_readers_directory --help
     - disdrodb_download_archive --help
     - disdrodb_download_station --help
     - disdrodb_upload_archive --help
@@ -81,11 +90,17 @@ test:
     - disdrodb_run_l0a_station --help
     - disdrodb_run_l0a --help
     - disdrodb_run_l0b_station --help
-    - disdrodb_run_l0_station --help
-    - disdrodb_run_l0b_concat_station --help
-    - disdrodb_run_l0b_concat --help
     - disdrodb_run_l0b --help
+    - disdrodb_run_l0c_station --help
+    - disdrodb_run_l0c --help
+    - disdrodb_run_l0_station --help
     - disdrodb_run_l0 --help
+    - disdrodb_run_l1_station --help
+    - disdrodb_run_l1 --help
+    - disdrodb_run_l2e_station --help
+    - disdrodb_run_l2e --help
+    - disdrodb_run_l2m_station --help
+    - disdrodb_run_l2m --help
   requires:
     - pip
     - python {{ python_min }}
