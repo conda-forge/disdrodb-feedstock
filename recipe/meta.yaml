@@ -68,6 +68,7 @@ requirements:
     - xarray
     - scipy
     - setuptools
+    - tectonic
 
 test:
   imports:
