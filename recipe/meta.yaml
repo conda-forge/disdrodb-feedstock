@@ -1,5 +1,5 @@
 {% set name = "disdrodb" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/disdrodb-{{ version }}.tar.gz
-  sha256: 3cff952956183418cd9803ab698e7b3749ac0a8b291711d3d8d54ddd9d9ebb08
+  sha256: ff42d9fc8e56ceabd610c74f0b88c5ebaaccb02b9a4f813e1ffd3c0213062b04
 
 build:
   entry_points:
@@ -62,10 +62,13 @@ requirements:
     - netcdf4
     - pyarrow
     - pandas
-    - dask-core
+    - dask
+    - distributed
+    - bokeh >=3.1.0
     - xarray
     - scipy
     - setuptools
+    - tectonic
 
 test:
   imports:
