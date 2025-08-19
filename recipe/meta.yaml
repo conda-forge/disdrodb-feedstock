@@ -40,6 +40,7 @@ build:
     - disdrodb_run_l2e = disdrodb.cli.disdrodb_run_l2e_station:disdrodb_run_l2e_station
     - disdrodb_run_l2m_station = disdrodb.cli.disdrodb_run_l2m_station:disdrodb_run_l2m_station
     - disdrodb_run_l2m = disdrodb.cli.disdrodb_run_l2m_station:disdrodb_run_l2m_station
+    - disdrodb_create_summary_station = disdrodb.cli.disdrodb_create_summary_station:disdrodb_create_summary_station
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
@@ -68,6 +69,7 @@ requirements:
     - xarray
     - scipy
     - setuptools
+    - matplotlib-base
     - tectonic
 
 test:
@@ -104,6 +106,7 @@ test:
     - disdrodb_run_l2e --help
     - disdrodb_run_l2m_station --help
     - disdrodb_run_l2m --help
+    - disdrodb_create_summary_station --help
   requires:
     - pip
     - python {{ python_min }}
