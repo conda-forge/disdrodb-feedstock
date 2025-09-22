@@ -68,6 +68,8 @@ requirements:
     - distributed
     - bokeh >=3.1.0
     - xarray
+    - bottleneck
+    - flox
     - scipy
     - setuptools
     - matplotlib-base
