@@ -1,5 +1,5 @@
 {% set name = "disdrodb" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/disdrodb-{{ version }}.tar.gz
-  sha256: 24aae925b79d502c4de6338cdc81382acf3f962a0ee420225d9c6c53ffd9c772
+  sha256: 1eba3cd3c34905b2adcbdbda13c2f2d613bd1ac342311ddf7d8f699470fc3674
 
 build:
   entry_points:
