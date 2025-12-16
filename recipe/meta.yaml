@@ -15,6 +15,7 @@ build:
     - disdrodb_data_archive_directory = disdrodb.cli.disdrodb_data_archive_directory:disdrodb_data_archive_directory
     - disdrodb_metadata_archive_directory = disdrodb.cli.disdrodb_metadata_archive_directory:disdrodb_metadata_archive_directory
     - disdrodb_download_metadata_archive = disdrodb.cli.disdrodb_download_metadata_archive:disdrodb_download_metadata_archive
+    - disdrodb_check_products_options = disdrodb.cli.disdrodb_check_products_options:disdrodb_check_products_options
     - disdrodb_check_metadata_archive = disdrodb.cli.disdrodb_check_metadata_archive:disdrodb_check_metadata_archive
     - disdrodb_open_metadata_archive = disdrodb.cli.disdrodb_open_metadata_archive:disdrodb_open_metadata_archive
     - disdrodb_open_data_archive = disdrodb.cli.disdrodb_open_data_archive:disdrodb_open_data_archive
@@ -40,6 +41,8 @@ build:
     - disdrodb_run_l2e = disdrodb.cli.disdrodb_run_l2e_station:disdrodb_run_l2e_station
     - disdrodb_run_l2m_station = disdrodb.cli.disdrodb_run_l2m_station:disdrodb_run_l2m_station
     - disdrodb_run_l2m = disdrodb.cli.disdrodb_run_l2m_station:disdrodb_run_l2m_station
+    - disdrodb_run_station = disdrodb.cli.disdrodb_run_station:disdrodb_run_station
+    - disdrodb_run = disdrodb.cli.disdrodb_run:disdrodb_run
     - disdrodb_create_summary_station = disdrodb.cli.disdrodb_create_summary_station:disdrodb_create_summary_station
     - disdrodb_create_summary = disdrodb.cli.disdrodb_create_summary:disdrodb_create_summary
   noarch: python
@@ -85,6 +88,7 @@ test:
     - disdrodb_data_archive_directory --help
     - disdrodb_metadata_archive_directory --help
     - disdrodb_download_metadata_archive --help
+    - disdrodb_check_products_options --help
     - disdrodb_check_metadata_archive --help
     - disdrodb_open_metadata_archive --help
     - disdrodb_open_data_archive --help
@@ -110,6 +114,8 @@ test:
     - disdrodb_run_l2e --help
     - disdrodb_run_l2m_station --help
     - disdrodb_run_l2m --help
+    - disdrodb_run_station --help
+    - disdrodb_run --help
     - disdrodb_create_summary_station --help
     - disdrodb_create_summary --help
   requires:
