@@ -124,7 +124,7 @@ test:
 
 about:
   home: https://github.com/ltelab/disdrodb
-  summary: disdrodb provides tools to download, standardize, share and analyze global disdrometer data.
+  summary: disdrodb - an open-source python software for standardized processing, sharing, and analysis of disdrometer data
   license: GPL-3.0-or-later
   license_file: LICENSE
 
