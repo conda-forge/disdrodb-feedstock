@@ -1,5 +1,5 @@
 {% set name = "disdrodb" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/disdrodb-{{ version }}.tar.gz
-  sha256: 4e6788c0013f1f8ef8544bdd41e238f17782cf31414aa350c7111ee3582d4e78
+  sha256: 69b947571ab3bd01f8c1e6bfb754541f859217a974cf570b1fb3ea904afc2e16
 
 build:
   entry_points:
@@ -124,7 +124,7 @@ test:
 
 about:
   home: https://github.com/ltelab/disdrodb
-  summary: disdrodb provides tools to download, standardize, share and analyze global disdrometer data.
+  summary: disdrodb - an open-source python software for standardized processing, sharing, and analysis of disdrometer data
   license: GPL-3.0-or-later
   license_file: LICENSE
 
