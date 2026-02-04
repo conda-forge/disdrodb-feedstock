@@ -1,5 +1,5 @@
 {% set name = "disdrodb" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/disdrodb-{{ version }}.tar.gz
-  sha256: 69b947571ab3bd01f8c1e6bfb754541f859217a974cf570b1fb3ea904afc2e16
+  sha256: 5d7475e5c8e8d20f206d45b49f760736df5923ecd013a55d1abfd7a38b9ed5a8
 
 build:
   entry_points:
@@ -23,6 +23,7 @@ build:
     - disdrodb_open_metadata_directory = disdrodb.cli.disdrodb_open_metadata_directory:disdrodb_open_metadata_directory
     - disdrodb_open_product_directory = disdrodb.cli.disdrodb_open_product_directory:disdrodb_open_product_directory
     - disdrodb_open_readers_directory = disdrodb.cli.disdrodb_open_readers_directory:disdrodb_open_readers_directory
+    - disdrodb_open_products_options = disdrodb.cli.disdrodb_open_products_options:disdrodb_open_products_options
     - disdrodb_download_archive = disdrodb.cli.disdrodb_download_archive:disdrodb_download_archive
     - disdrodb_download_station = disdrodb.cli.disdrodb_download_station:disdrodb_download_station
     - disdrodb_upload_archive = disdrodb.cli.disdrodb_upload_archive:disdrodb_upload_archive
@@ -96,6 +97,7 @@ test:
     - disdrodb_open_metadata_directory --help
     - disdrodb_open_product_directory --help
     - disdrodb_open_readers_directory --help
+    - disdrodb_open_products_options --help
     - disdrodb_download_archive --help
     - disdrodb_download_station --help
     - disdrodb_upload_archive --help
