@@ -23,6 +23,7 @@ build:
     - disdrodb_open_metadata_directory = disdrodb.cli.disdrodb_open_metadata_directory:disdrodb_open_metadata_directory
     - disdrodb_open_product_directory = disdrodb.cli.disdrodb_open_product_directory:disdrodb_open_product_directory
     - disdrodb_open_readers_directory = disdrodb.cli.disdrodb_open_readers_directory:disdrodb_open_readers_directory
+    - disdrodb_open_products_options = disdrodb.cli.disdrodb_open_products_options:disdrodb_open_products_options
     - disdrodb_download_archive = disdrodb.cli.disdrodb_download_archive:disdrodb_download_archive
     - disdrodb_download_station = disdrodb.cli.disdrodb_download_station:disdrodb_download_station
     - disdrodb_upload_archive = disdrodb.cli.disdrodb_upload_archive:disdrodb_upload_archive
@@ -96,6 +97,7 @@ test:
     - disdrodb_open_metadata_directory --help
     - disdrodb_open_product_directory --help
     - disdrodb_open_readers_directory --help
+    - disdrodb_open_products_options --help
     - disdrodb_download_archive --help
     - disdrodb_download_station --help
     - disdrodb_upload_archive --help
