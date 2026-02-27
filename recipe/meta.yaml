@@ -80,6 +80,7 @@ requirements:
     - matplotlib-base
     - tectonic
     - scikit-learn
+    - pycolorbar
 
 test:
   imports:
