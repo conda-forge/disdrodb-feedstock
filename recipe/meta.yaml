@@ -73,8 +73,10 @@ requirements:
     - distributed
     - bokeh >=3.1.0
     - xarray
+    - numbagg
     - bottleneck
     - flox
+    - opt-einsum
     - scipy
     - setuptools
     - matplotlib-base
