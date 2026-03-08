@@ -1,5 +1,5 @@
 {% set name = "disdrodb" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/disdrodb-{{ version }}.tar.gz
-  sha256: b6b0604fd9292a51b20ebc626de2e667108cbd49b2a76dac700bd0a23358b8bb
+  sha256: 289a8b756d1af513748d54802ce748c9c278d5f677eb3c53889a84963b648e9c
 
 build:
   entry_points:
@@ -73,8 +73,10 @@ requirements:
     - distributed
     - bokeh >=3.1.0
     - xarray
+    - numbagg
     - bottleneck
     - flox
+    - opt-einsum
     - scipy
     - setuptools
     - matplotlib-base
